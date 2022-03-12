@@ -23,7 +23,7 @@ const Header = () => {
           <div>
             <div className="bg-gradient-to-r from-violet-900/80 via-violet-900/80 to-violet-900/80 backdrop-blur-xs absolute md:px-0 px-3 w-1/2 h-full flex flex-col justify-center items-center text-white">
               <div>
-                <h1 className="text-thin text-sm mb-2">
+                <h1 className="text-thin mb:text-lg text-sm mb-2">
                   New collection droped
                 </h1>
                 <h1 className="font-bold md:text-3xl  z-10">
