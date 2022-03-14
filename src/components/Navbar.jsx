@@ -1,4 +1,5 @@
 import { Fragment } from "react";
+import { Link } from "react-router-dom";
 import { Disclosure, Menu, Transition } from "@headlessui/react";
 import { MenuIcon, XIcon } from "@heroicons/react/outline";
 import Logo from "../assets/logo.svg";
@@ -12,10 +13,9 @@ const Navbar = () => {
       "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
   };
   const navigation = [
-    { name: "Store", href: "#", current: false },
-    { name: "About", href: "#", current: false },
-    { name: "Collection", href: "#", current: false },
-    { name: "Road Map", href: "#", current: false },
+    { name: "Store", href: "/Store", current: false },
+    { name: "About", href: "/about", current: false },
+    { name: "Road Map", href: "/roadmap", current: false },
   ];
   const userNavigation = [
     { name: "Your Profile", href: "#" },
@@ -40,14 +40,16 @@ const Navbar = () => {
               <div className="flex items-center justify-between h-16">
                 <div className="flex items-center">
                   <div className="flex-shrink-0">
-                    <img src={Logo} alt="Workflow" />
+                    <Link to="/">
+                      <img src={Logo} alt="Workflow" />
+                    </Link>
                   </div>
                   <div className="hidden md:block">
                     <div className="ml-10 flex items-baseline space-x-4">
                       {navigation.map((item) => (
-                        <a
+                        <Link
                           key={item.name}
-                          href={item.href}
+                          to={item.href}
                           className={classNames(
                             item.current
                               ? "bg-gray-900 text-white"
@@ -57,7 +59,7 @@ const Navbar = () => {
                           aria-current={item.current ? "page" : undefined}
                         >
                           {item.name}
-                        </a>
+                        </Link>
                       ))}
                     </div>
                   </div>
