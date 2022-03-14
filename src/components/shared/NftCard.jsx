@@ -5,7 +5,7 @@ const NftCard = ({ user }) => {
   const { img, price, nft_name } = user;
   return (
     <>
-      <div className="card bg-gradient-to-r from-violet-800 to-violet-900 text-white shadow-xl">
+      <div className="card bg-gradient-to-r from-violet-800 to-violet-900 text-white shadow-xl m-1">
         <figure className="">
           <img className="w-full p-2" src={img} alt="Album" />
         </figure>
