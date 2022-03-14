@@ -1,6 +1,10 @@
-import nftImage from "../assets/nft-image.png";
+import { useContext } from "react";
+import UserContext from "../context/UserContext";
+import NftCard from "./shared/NftCard";
 
 const TopCollections = () => {
+  const { users } = useContext(UserContext);
+
   return (
     <>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 my-16">
@@ -24,21 +28,10 @@ const TopCollections = () => {
             7 days
           </button>
         </div>
-        <div>
-          <div className="card w-5/12 bg-gradient-to-r from-violet-500 to-violet-400 text-white shadow-xl">
-            <figure>
-              <img className="w-full" src={nftImage} alt="Album" />
-            </figure>
-            <div className="card-body">
-              <h2 className="card-title text-xs">New album is released!</h2>
-              <p className="text-xs">
-                Click the button to listen on Spotiwhy app.
-              </p>
-              <div className="card-actions justify-end">
-                <button className="btn btn-primary">Listen</button>
-              </div>
-            </div>
-          </div>
+        <div className="grid grid-flow-row md:grid-cols-4 grid-cols-2 gap-4">
+          {users.map((user) => (
+            <NftCard user={user} />
+          ))}
         </div>
       </div>
     </>

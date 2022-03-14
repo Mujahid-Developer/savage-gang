@@ -32,7 +32,7 @@ const Navbar = () => {
           <>
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
               <img
-                className="absolute -z-10 top-0 right-0"
+                className=" md:w-80 w-56 absolute -z-10 top-0 right-0"
                 src={RightSVG}
                 alt=""
                 srcset=""
