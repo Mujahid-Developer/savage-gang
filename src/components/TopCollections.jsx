@@ -1,6 +1,7 @@
 import { useContext } from "react";
 import UserContext from "../context/UserContext";
 import NftCard from "./shared/NftCard";
+import { Tab } from "@headlessui/react";
 
 const TopCollections = () => {
   const { users } = useContext(UserContext);
@@ -14,25 +15,86 @@ const TopCollections = () => {
         >
           Top Collections
         </h1>
-        <div className="flex justify-center items-center my-8 gap-5 w-full ">
-          <button className="text-white btn btn-outline md:btn-md btn-sm rounded-full md:px-10 border-violet-700 hover:bg-gradient-to-r from-violet-500 to-violet-400 hover:border-violet-700 hover:text-white">
-            7 days
-          </button>
-          <button className="text-white btn btn-outline md:btn-md btn-sm rounded-full md:px-10 border-violet-700 hover:bg-gradient-to-r from-violet-500 to-violet-400 hover:border-violet-700 hover:text-white">
-            7 days
-          </button>
-          <button className="text-white btn btn-outline md:btn-md btn-sm rounded-full md:px-10 border-violet-700 bg-gradient-to-r from-violet-500 to-violet-400 hover:border-violet-700 hover:text-white">
-            7 days
-          </button>
-          <button className="text-white btn btn-outline md:btn-md btn-sm rounded-full md:px-10 border-violet-700 hover:bg-gradient-to-r from-violet-500 to-violet-400 hover:border-violet-700 hover:text-white">
-            7 days
-          </button>
-        </div>
-        <div className="grid grid-flow-row md:grid-cols-4 grid-cols-2 gap-4">
-          {users.map((user) => (
-            <NftCard user={user} />
-          ))}
-        </div>
+        <Tab.Group>
+          <div className="flex justify-center items-center my-8 w-full ">
+            <Tab.List className={"flex gap-5"}>
+              <Tab>
+                {({ selected }) => (
+                  <button
+                    className={
+                      selected
+                        ? "text-white btn btn-outline md:btn-md btn-md rounded-full md:px-10 border-violet-700 bg-gradient-to-r from-violet-500 to-violet-400"
+                        : "text-white btn btn-outline md:btn-md btn-md rounded-full md:px-10 border-violet-700 hover:bg-gradient-to-r from-violet-500 to-violet-400 hover:border-violet-700 hover:text-white"
+                    }
+                  >
+                    7 days
+                  </button>
+                )}
+              </Tab>
+              <Tab>
+                {({ selected }) => (
+                  <button
+                    className={
+                      selected
+                        ? "text-white btn btn-outline md:btn-md btn-md rounded-full md:px-10 border-violet-700 bg-gradient-to-r from-violet-500 to-violet-400"
+                        : "text-white btn btn-outline md:btn-md btn-md rounded-full md:px-10 border-violet-700 hover:bg-gradient-to-r from-violet-500 to-violet-400 hover:border-violet-700 hover:text-white"
+                    }
+                  >
+                    7 days
+                  </button>
+                )}
+              </Tab>
+              <Tab>
+                {({ selected }) => (
+                  <button
+                    className={
+                      selected
+                        ? "text-white btn btn-outline md:btn-md btn-md rounded-full md:px-10 border-violet-700 bg-gradient-to-r from-violet-500 to-violet-400"
+                        : "text-white btn btn-outline md:btn-md btn-md rounded-full md:px-10 border-violet-700 hover:bg-gradient-to-r from-violet-500 to-violet-400 hover:border-violet-700 hover:text-white"
+                    }
+                  >
+                    7 days
+                  </button>
+                )}
+              </Tab>
+              <Tab>
+                {({ selected }) => (
+                  <button
+                    className={
+                      selected
+                        ? "text-white btn btn-outline md:btn-md btn-md rounded-full md:px-10 border-violet-700 bg-gradient-to-r from-violet-500 to-violet-400"
+                        : "text-white btn btn-outline md:btn-md btn-md rounded-full md:px-10 border-violet-700 hover:bg-gradient-to-r from-violet-500 to-violet-400 hover:border-violet-700 hover:text-white"
+                    }
+                  >
+                    7 days
+                  </button>
+                )}
+              </Tab>
+            </Tab.List>
+          </div>
+          <Tab.Panels>
+            <Tab.Panel className="grid grid-flow-row md:grid-cols-4 grid-cols-2 gap-4">
+              {users.slice(0, 5).map((user) => (
+                <NftCard user={user} />
+              ))}
+            </Tab.Panel>
+            <Tab.Panel className="grid grid-flow-row md:grid-cols-4 grid-cols-2 gap-4">
+              {users.slice(0, 3).map((user) => (
+                <NftCard user={user} />
+              ))}
+            </Tab.Panel>
+            <Tab.Panel className="grid grid-flow-row md:grid-cols-4 grid-cols-2 gap-4">
+              {users.slice(0, 9).map((user) => (
+                <NftCard user={user} />
+              ))}
+            </Tab.Panel>
+            <Tab.Panel className="grid grid-flow-row md:grid-cols-4 grid-cols-2 gap-4">
+              {users.slice(0, 6).map((user) => (
+                <NftCard user={user} />
+              ))}
+            </Tab.Panel>
+          </Tab.Panels>
+        </Tab.Group>
       </div>
     </>
   );
