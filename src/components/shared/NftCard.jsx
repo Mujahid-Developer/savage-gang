@@ -15,8 +15,10 @@ const NftCard = ({ user }) => {
             <img className="w-3.5" src={Eth_logo} alt="" />
           </div>
           <div className="flex justify-between items-center py-2">
-            <h1 className="w-3/4 font-semibold text-xl">{nft_name}</h1>
-            <h1 className="font-medium">{price} ETH</h1>
+            <h1 className="w-3/4 font-semibold md:text-xl text-lg">
+              {nft_name}
+            </h1>
+            <h1 className="font-medium md:text-normal text-sm">{price} ETH</h1>
           </div>
           <button className="btn w-full bg-gradient-to-r from-violet-600 to-violet-500 border-none text-white">
             Get Now
