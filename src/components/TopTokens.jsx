@@ -52,7 +52,7 @@ const TopTokens = () => {
           </div>
           <div className="">
             <Carousel responsive={responsive}>
-              {users.slice(0, 10).map((user) => (
+              {users.slice(23, 26).map((user) => (
                 <NftCard user={user} />
               ))}
             </Carousel>

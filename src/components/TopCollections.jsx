@@ -8,7 +8,7 @@ const TopCollections = () => {
 
   return (
     <>
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 my-16">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 my-16 min-h-screen">
         <h1
           className=" text-3xl text-transparent bg-clip-text bg-gradient-to-r from-purple-700 via-purple-500 to-purple-700 text-center"
           style={{ fontFamily: "Aldrich" }}
@@ -40,7 +40,7 @@ const TopCollections = () => {
                         : "text-white btn btn-outline md:btn-md btn-md rounded-full md:px-10 border-violet-700 hover:bg-gradient-to-r from-violet-500 to-violet-400 hover:border-violet-700 hover:text-white"
                     }
                   >
-                    7 days
+                    15 days
                   </button>
                 )}
               </Tab>
@@ -53,7 +53,7 @@ const TopCollections = () => {
                         : "text-white btn btn-outline md:btn-md btn-md rounded-full md:px-10 border-violet-700 hover:bg-gradient-to-r from-violet-500 to-violet-400 hover:border-violet-700 hover:text-white"
                     }
                   >
-                    7 days
+                    20 days
                   </button>
                 )}
               </Tab>
@@ -66,7 +66,7 @@ const TopCollections = () => {
                         : "text-white btn btn-outline md:btn-md btn-md rounded-full md:px-10 border-violet-700 hover:bg-gradient-to-r from-violet-500 to-violet-400 hover:border-violet-700 hover:text-white"
                     }
                   >
-                    7 days
+                    30 days
                   </button>
                 )}
               </Tab>
@@ -74,22 +74,22 @@ const TopCollections = () => {
           </div>
           <Tab.Panels>
             <Tab.Panel className="grid grid-flow-row md:grid-cols-4 grid-cols-2 gap-4">
-              {users.slice(0, 5).map((user) => (
+              {users.slice(0, 8).map((user) => (
                 <NftCard user={user} />
               ))}
             </Tab.Panel>
             <Tab.Panel className="grid grid-flow-row md:grid-cols-4 grid-cols-2 gap-4">
-              {users.slice(0, 3).map((user) => (
+              {users.slice(8, 15).map((user) => (
                 <NftCard user={user} />
               ))}
             </Tab.Panel>
             <Tab.Panel className="grid grid-flow-row md:grid-cols-4 grid-cols-2 gap-4">
-              {users.slice(0, 9).map((user) => (
+              {users.slice(15, 20).map((user) => (
                 <NftCard user={user} />
               ))}
             </Tab.Panel>
             <Tab.Panel className="grid grid-flow-row md:grid-cols-4 grid-cols-2 gap-4">
-              {users.slice(0, 6).map((user) => (
+              {users.slice(20, 26).map((user) => (
                 <NftCard user={user} />
               ))}
             </Tab.Panel>
