@@ -13,6 +13,7 @@ import nftImage12 from "../assets/nfts/Sternman.png";
 import nftImage13 from "../assets/nfts/Pensive Moustache.png";
 import nftImage14 from "../assets/nfts/Topsy Turvy.png";
 import nftImage15 from "../assets/nfts/Frizzy Fuzz.png";
+import nftImage27 from "../assets/nfts/Pi.png";
 // Girls Nfts
 import nftImage16 from "../assets/nfts/Fanta Haired.png";
 import nftImage17 from "../assets/nfts/Classy Girl.png";
@@ -34,7 +35,7 @@ export const data = [
     details:
       "Smile. Joker. Whatever. Lost dad at 6. Mom at 12. Aunt took over. Dominated him. Violence. Violence. Violence. Unfair life. Someone once suggested to him, very late in life: Fake it till you make it. Though he is faking it―his smile, he hasn't made it yet. Yet he finds happiness by making others laugh whenever he can. In the kitchen, at the bar, at the restaurant. Every single where. He smiles when he's sad. He laughs when he can make others smile.",
     price: 0.2,
-    url: "#",
+    url: "https://opensea.io/assets/matic/0x2953399124f0cbb46d2cbacd8a89cf0599974963/100341948658409791632230525304472978142636624588337395574277318108448804569089",
   },
   {
     id: 2,
@@ -43,7 +44,7 @@ export const data = [
     details:
       "He’s a grown-up now. He was scanning through his phone but stopped when he saw “Mom” and dialed the number. No answer from the other end, the call gets cut. He dials again but then his dad enters the room. He cut the call and talked with him for a while. He walks out of the room, forgetting to take his phone. His father realized it when it buzzed with a notification. He takes it and scans the phone normally, somehow he reaches the dialed contacts. And stops, like can’t move an inch when he sees “Mom” dialed twice there. He looks up at his late wife’s photo on the wall, “It’s been two years, but he still thinks you’ll come back”",
     price: 0.2,
-    url: "#",
+    url: "https://opensea.io/assets/matic/0x2953399124f0cbb46d2cbacd8a89cf0599974963/100341948658409791632230525304472978142636624588337395574277318110647827824641",
   },
   {
     id: 3,
@@ -71,7 +72,7 @@ export const data = [
     details:
       "His one eye, left eye pulled out grossly. It didn’t recover well, it looked horrible when someone would stare at him. When he would cry and a drop of tear would fall out from the left eye, it would make anyone shiver. He puts black clothing over his left eye as it didn’t recover well. He would walk outside and people would stare at him and give awkward looks. The kindergarten kids would stare and smile, and shout at him “Arr, Pirate!”.",
     price: 0.2,
-    url: "#",
+    url: "https://opensea.io/assets/matic/0x2953399124f0cbb46d2cbacd8a89cf0599974963/100341948658409791632230525304472978142636624588337395574277318107349292941313",
   },
   {
     id: 6,
@@ -95,6 +96,15 @@ export const data = [
     id: 8,
     img: nftImage8,
     nft_name: "Chief Gangsta",
+    details:
+      "His little sister and his mother lived in a small cottage in a dark shallow alley with him. His father fled after getting scammed for millions of dollars… now what other chances did he get other than paying his father’s debt? Dropped out of high school long back as he couldn’t manage its expenses. But sadly he followed the same shitty path where his father once ruled. Gangster, people would recognize him by one go… ”Chief Gangsta”. And what did he get out of all these? One afternoon after coming back home, the silence felt ghostly in the house to him. The numbness gets all over his body and he falls on the floor being a mess, the two most beloved people to him… their dead bodies soaked with blood lie there in front of him. He blamed all of it on the one who was actually at fault… HIMSELF.",
+    price: 0.2,
+    url: "#",
+  },
+  {
+    id: 27,
+    img: nftImage27,
+    nft_name: "Pi",
     details:
       "His little sister and his mother lived in a small cottage in a dark shallow alley with him. His father fled after getting scammed for millions of dollars… now what other chances did he get other than paying his father’s debt? Dropped out of high school long back as he couldn’t manage its expenses. But sadly he followed the same shitty path where his father once ruled. Gangster, people would recognize him by one go… ”Chief Gangsta”. And what did he get out of all these? One afternoon after coming back home, the silence felt ghostly in the house to him. The numbness gets all over his body and he falls on the floor being a mess, the two most beloved people to him… their dead bodies soaked with blood lie there in front of him. He blamed all of it on the one who was actually at fault… HIMSELF.",
     price: 0.2,

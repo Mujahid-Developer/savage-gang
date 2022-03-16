@@ -45,10 +45,12 @@ const TopTokens = () => {
               ipsum, ut iusto aspernatur voluptatibus totam eaque nostrum quia
               dolore quidem hic ducimus molestiae? Pariatur, sint!
             </p>
-            <button className="btn w-80 bg-gradient-to-r from-violet-500 to-violet-400 border-0 text-white">
-              <GiSailboat className="border-none text-white text-3xl mr-2" />
-              Open OpenSea
-            </button>
+            <a href="https://opensea.io/collection/savage-gang">
+              <button className="btn w-80 bg-gradient-to-r from-violet-500 to-violet-400 border-0 text-white">
+                <GiSailboat className="border-none text-white text-3xl mr-2" />
+                Open OpenSea
+              </button>
+            </a>
           </div>
           <div className="">
             <Carousel responsive={responsive}>

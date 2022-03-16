@@ -36,7 +36,9 @@ const Footer = () => {
                 <FaFacebookF className="btn btn-circle bg-gradient-to-r from-violet-600 to-violet-500 border-none text-white p-3" />
                 <FaInstagram className="btn btn-circle bg-gradient-to-r from-violet-600 to-violet-500 border-none text-white p-3" />
                 <FaTwitter className="btn btn-circle bg-gradient-to-r from-violet-600 to-violet-500 border-none text-white p-3" />
-                <GiSailboat className="btn btn-circle bg-gradient-to-r from-violet-600 to-violet-500 border-none text-white p-3" />
+                <a href="https://opensea.io/collection/savage-gang">
+                  <GiSailboat className="btn btn-circle bg-gradient-to-r from-violet-600 to-violet-500 border-none text-white p-3" />
+                </a>
               </div>
             </div>
           </div>
