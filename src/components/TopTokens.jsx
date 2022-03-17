@@ -1,9 +1,10 @@
 import { useContext } from "react";
 import UserContext from "../context/UserContext";
 import NftCard from "./shared/NftCard";
-import { GiSailboat } from "react-icons/gi";
+import { FaStore } from "react-icons/fa";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
+import { Link } from "react-router-dom";
 
 // Import Swiper styles
 
@@ -28,7 +29,7 @@ const TopTokens = () => {
   };
   return (
     <>
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 my-16">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 my-16 min-h-96">
         <h1
           className=" text-3xl text-transparent bg-clip-text bg-gradient-to-r from-purple-700 via-purple-500 to-purple-700 text-center"
           style={{ fontFamily: "Aldrich" }}
@@ -38,23 +39,22 @@ const TopTokens = () => {
 
         <div className="grid md:grid-cols-2 grid-cols-1 mt-10 gap-4 items-center">
           <div className=" flex flex-col gap-4 md:items-start items-center md:text-left text-center">
-            <h1 className="text-4xl font-bold text-white">Savage Polapains</h1>
-            <p className="text=3xl text-white">200+ Collections</p>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam
-              ipsum, ut iusto aspernatur voluptatibus totam eaque nostrum quia
-              dolore quidem hic ducimus molestiae? Pariatur, sint!
+            <h1 className="text-4xl font-bold text-white">
+              Savage Homosapiens
+            </h1>
+            <p className="text=3xl text-white">
+              Every savage has a story, here are ours.
             </p>
-            <a href="https://opensea.io/collection/savage-gang">
-              <button className="btn w-80 bg-gradient-to-r from-violet-500 to-violet-400 border-0 text-white">
-                <GiSailboat className="border-none text-white text-3xl mr-2" />
-                Open OpenSea
+            <Link to="/store">
+              <button className="btn w-76 bg-gradient-to-r from-violet-500 to-violet-400 border-0 text-white">
+                <FaStore className="border-none text-white text-3xl mr-2" />
+                Open Store
               </button>
-            </a>
+            </Link>
           </div>
           <div className="">
             <Carousel responsive={responsive}>
-              {users.slice(23, 26).map((user) => (
+              {users.slice(24, 27).map((user) => (
                 <NftCard user={user} />
               ))}
             </Carousel>

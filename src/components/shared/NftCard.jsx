@@ -2,21 +2,21 @@ import { Dialog, Transition } from "@headlessui/react";
 import React, { useState, Fragment } from "react";
 import Eth_logo from "../../assets/eth_logo.svg";
 
-const ReadMore = ({ children }) => {
-  const text = children;
-  const [isReadMore, setIsReadMore] = useState(true);
-  const toggleReadMore = () => {
-    setIsReadMore(!isReadMore);
-  };
-  return (
-    <p className="text text-sm">
-      {isReadMore ? text.slice(0, 300) : text}
-      <span onClick={toggleReadMore} className="read-or-hide">
-        {isReadMore ? "...read more" : " show less"}
-      </span>
-    </p>
-  );
-};
+// const ReadMore = ({ children }) => {
+//   const text = children;
+//   const [isReadMore, setIsReadMore] = useState(true);
+//   const toggleReadMore = () => {
+//     setIsReadMore(!isReadMore);
+//   };
+//   return (
+//     <p className="text text-sm">
+//       {isReadMore ? text.slice(0, 300) : text}
+//       <span onClick={toggleReadMore} className="read-or-hide">
+//         {isReadMore ? "...read more" : " show less"}
+//       </span>
+//     </p>
+//   );
+// };
 
 const NftCard = ({ user }) => {
   const { img, price, nft_name, details, url } = user;
@@ -32,23 +32,25 @@ const NftCard = ({ user }) => {
 
   return (
     <>
-      <div
-        className="card bg-gradient-to-r from-violet-800 to-violet-900 text-white shadow-xl m-1 p-2 flex flex-col justify-between cursor-pointer"
-        onClick={openModal}
-      >
-        <figure>
-          <img className="w-full p-1" src={img} alt="Album" />
-        </figure>
-        <div className="p-1">
-          <div className="flex justify-between">
-            <h1 className="font-thin">Latest</h1>
-            <img className="w-3.5" src={Eth_logo} alt="" />
-          </div>
-          <div className="flex justify-between items-center py-2">
-            <h1 className="w-3/4 font-semibold md:text-lg text-sm">
-              {nft_name}
-            </h1>
-            <h1 className="font-medium md:text-normal text-sm">{price} ETH</h1>
+      <div className="card  bg-gradient-to-r from-violet-700/80 via-violet-600/80 to-violet-700/80 backdrop-blur-xs text-white shadow-xl m-1 p-2 flex flex-col justify-between cursor-pointer">
+        <div>
+          <figure>
+            <img className="w-full p-1" src={img} alt="Album" />
+          </figure>
+          <div className="p-1 mt-2">
+            <div className="flex justify-between items-center">
+              <button
+                className="btn btn-xs font-bold bg-white rounded-full text-violet-900 hover:text-white hover:bg-violet-700 border-none px-2"
+                onClick={openModal}
+              >
+                Story
+              </button>
+              <img className="w-3" src={Eth_logo} alt="" />
+            </div>
+            <div className="flex justify-between py-2">
+              <h1 className="w-3/5 font-semibold text-sm">{nft_name}</h1>
+              <h1 className="font-medium md:text-sm text-xs">{price} ETH</h1>
+            </div>
           </div>
         </div>
         <a href={url}>
@@ -94,7 +96,7 @@ const NftCard = ({ user }) => {
                 leaveFrom="opacity-100 scale-100"
                 leaveTo="opacity-0 scale-95"
               >
-                <div className="inline-block w-full max-w-md p-6 my-8 overflow-hidden text-left align-middle transition-all transform bg-violet-900 shadow-xl rounded-2xl">
+                <div className="inline-block w-full max-w-md p-6 my-8 overflow-hidden text-left align-middle transition-all transform bg-gradient-to-r from-violet-900/80 via-violet-900/80 to-violet-900/80 backdrop-blur-xs shadow-xl rounded-2xl">
                   <Dialog.Title
                     as="h3"
                     className="text-lg font-medium leading-6 text-white"
@@ -102,15 +104,13 @@ const NftCard = ({ user }) => {
                     Story
                   </Dialog.Title>
                   <div className="mt-2">
-                    <p className="text-sm text-white">
-                      <ReadMore>{details}</ReadMore>
-                    </p>
+                    <p className="text-sm text-white">{details}</p>
                   </div>
 
                   <div className="mt-4">
                     <button
                       type="button"
-                      className="inline-flex justify-center px-4 py-2 text-sm font-medium text-blue-900 bg-blue-100 border border-transparent rounded-md hover:bg-blue-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-blue-500"
+                      className="inline-flex justify-center px-4 py-2 text-sm font-medium text-violet-900 bg-blue-100 border border-transparent rounded-md hover:bg-blue-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-blue-500"
                       onClick={closeModal}
                     >
                       thanks!

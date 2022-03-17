@@ -73,23 +73,23 @@ const TopCollections = () => {
             </Tab.List>
           </div>
           <Tab.Panels>
-            <Tab.Panel className="grid grid-flow-row md:grid-cols-4 grid-cols-2 gap-4">
+            <Tab.Panel className="grid grid-flow-row md:grid-cols-3 grid-cols-2 gap-4">
               {users.slice(0, 8).map((user) => (
                 <NftCard user={user} />
               ))}
             </Tab.Panel>
             <Tab.Panel className="grid grid-flow-row md:grid-cols-4 grid-cols-2 gap-4">
-              {users.slice(8, 15).map((user) => (
+              {users.slice(8, 16).map((user) => (
                 <NftCard user={user} />
               ))}
             </Tab.Panel>
             <Tab.Panel className="grid grid-flow-row md:grid-cols-4 grid-cols-2 gap-4">
-              {users.slice(15, 20).map((user) => (
+              {users.slice(16, 21).map((user) => (
                 <NftCard user={user} />
               ))}
             </Tab.Panel>
             <Tab.Panel className="grid grid-flow-row md:grid-cols-4 grid-cols-2 gap-4">
-              {users.slice(20, 26).map((user) => (
+              {users.slice(21, 27).map((user) => (
                 <NftCard user={user} />
               ))}
             </Tab.Panel>
