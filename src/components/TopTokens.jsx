@@ -23,7 +23,7 @@ const TopTokens = () => {
     },
     mobile: {
       breakpoint: { max: 464, min: 0 },
-      items: 1,
+      items: 2,
       slidesToSlide: 1, // optional, default to 1.
     },
   };
@@ -39,7 +39,7 @@ const TopTokens = () => {
 
         <div className="grid md:grid-cols-2 grid-cols-1 mt-10 gap-4 items-center">
           <div className=" flex flex-col gap-4 md:items-start items-center md:text-left text-center">
-            <h1 className="text-4xl font-bold text-white">
+            <h1 className="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-700 via-purple-500 to-purple-700">
               Savage Homosapiens
             </h1>
             <p className="text=3xl text-white">
@@ -52,9 +52,9 @@ const TopTokens = () => {
               </button>
             </Link>
           </div>
-          <div className="">
+          <div className="mt-5">
             <Carousel responsive={responsive}>
-              {users.slice(24, 27).map((user) => (
+              {users.slice(23, 27).map((user) => (
                 <NftCard user={user} />
               ))}
             </Carousel>
