@@ -38,12 +38,13 @@ const TopTokens = () => {
         </h1>
 
         <div className="grid md:grid-cols-2 grid-cols-1 mt-10 gap-4 items-center">
-          <div className=" flex flex-col gap-4 md:items-start items-center md:text-left text-center">
+          <div className=" flex flex-col gap-5 md:items-start items-center md:text-left text-center">
             <h1 className="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-700 via-purple-500 to-purple-700">
               Savage Homosapiens
             </h1>
             <p className="text=3xl text-white">
-              Every savage has a story, here are ours.
+              Welcome to the home of Savage Gang on OpenSea. <br />
+              Discover the best items in this collection.
             </p>
             <Link to="/store">
               <button className="btn w-76 bg-gradient-to-r from-violet-500 to-violet-400 border-0 text-white">

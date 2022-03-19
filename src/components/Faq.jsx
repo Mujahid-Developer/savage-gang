@@ -6,24 +6,21 @@ import Faq_Logo from "../assets/faq-logo.svg";
 const Faq = () => {
   const FAQ_TEXT = [
     {
-      title: "title-1",
+      title: "What is the total supply?",
       description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius totam recusandae reprehenderit.",
+        "Only 27 savages. The gang isn't big. But it's the most powerful. We can only make true friendship with less than 150 people, anyway.",
     },
     {
-      title: "title-2",
-      description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius totam recusandae reprehenderit.",
+      title: "Which blockchain?",
+      description: "Ethereum Blockchain (ERC721)",
     },
     {
-      title: "title-3",
-      description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius totam recusandae reprehenderit.",
+      title: "What's the mint price?",
+      description: "Savage decided it to be 0.0666 ETH.",
     },
     {
-      title: "title-4",
-      description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius totam recusandae reprehenderit.",
+      title: "When minting?",
+      description: "Presale: 20th March. Public sale: 25th March.",
     },
   ];
 

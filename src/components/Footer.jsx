@@ -1,5 +1,6 @@
 import { FaFacebookF, FaInstagram, FaTwitter } from "react-icons/fa";
 import { GiSailboat } from "react-icons/gi";
+import { Link } from "react-router-dom";
 import Logo from "../assets/logo.svg";
 
 const Footer = () => {
@@ -11,18 +12,16 @@ const Footer = () => {
             <div className="md:w-1/2">
               <img src={Logo} alt="" />
               <p className="text-sm font-thin">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
-                unde consequatur laudantium ipsa architecto ipsam! Enim
-                consectetur quasi non delectus dolorum quod atque quo blanditiis
-                facere. Sit tempora sequi dicta?
+                Savage isn't a meme. It's not a cream. It's not a sunglass. A
+                savage has to be made. They were made, after a lot of tragedy.
+                They are the true savage, they don't need the sunglasses.
               </p>
             </div>
             <div>
               <ul className="flex gap-4 md:flex-col md:gap-0">
-                <li>Store</li>
-                <li>About</li>
-                <li>Collection</li>
-                <li>Roadmap</li>
+                <Link to="/store">Store</Link>
+                <Link to="/about">About</Link>
+                <Link to="/roadmap">Roadmap</Link>
               </ul>
             </div>
             <div className="flex flex-col md:items-end gap-3">

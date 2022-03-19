@@ -1,6 +1,54 @@
+import React from "react";
+import Countdown from "react-countdown";
+import { useState, useEffect } from "react";
 import HeaderCover from "../assets/cover.png";
 
+// Random component
+const Completionist = () => <span>You are good to go!</span>;
+
+// Renderer callback with condition
+const renderer = ({ hours, minutes, seconds, completed }) => {
+  if (completed) {
+    // Render a complete state
+    return <Completionist />;
+  } else {
+    // Render a countdown
+    return (
+      <span>
+        {hours}:{minutes}:{seconds}
+      </span>
+    );
+  }
+};
+
 const Header = () => {
+  const d = new Date();
+  d.setDate(d.getDate() + 2);
+  const [data, setData] = useState(
+    { date: d, delay: 60000 } //60 seconds
+  );
+  const wantedDelay = 60000; //60 s
+
+  const getLocalStorageValue = (s) => localStorage.getItem(s);
+
+  useEffect(() => {
+    const savedDate = getLocalStorageValue("end_date");
+    if (savedDate != null && !isNaN(savedDate)) {
+      const currentTime = Date.now();
+      const delta = parseInt(savedDate, 10) - currentTime;
+
+      //Do you reach the end?
+      if (delta > wantedDelay) {
+        //Yes we clear uour saved end date
+        if (localStorage.getItem("end_date").length > 0)
+          localStorage.removeItem("end_date");
+      } else {
+        //No update the end date
+        setData({ date: currentTime, delay: delta });
+      }
+    }
+  }, []);
+
   return (
     <>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 min-h-96">
@@ -40,7 +88,22 @@ const Header = () => {
                     className="md:text-2xl text-sm"
                     style={{ fontFamily: "Aldrich" }}
                   >
-                    20h 8m 52s
+                    <Countdown
+                      date={data.date + data.delay}
+                      renderer={renderer}
+                      onStart={(delta) => {
+                        //Save the end date
+                        if (localStorage.getItem("end_date") == null)
+                          localStorage.setItem(
+                            "end_date",
+                            JSON.stringify(data.date + data.delay)
+                          );
+                      }}
+                      onComplete={() => {
+                        if (localStorage.getItem("end_date") != null)
+                          localStorage.removeItem("end_date");
+                      }}
+                    />
                   </h1>
                   <button className="md:btn md:btn-lg btn-sm py-2 px-4 rounded-lg md:px-6 bg-gradient-to-r from-violet-500 to-violet-400 border-none md:text-white text-xs">
                     OpenSea

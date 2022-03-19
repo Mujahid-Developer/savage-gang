@@ -104,7 +104,10 @@ const NftCard = ({ user }) => {
                     Story
                   </Dialog.Title>
                   <div className="mt-2">
-                    <p className="text-sm text-white">{details}</p>
+                    <p
+                      className="text-sm text-white"
+                      dangerouslySetInnerHTML={{ __html: details }}
+                    ></p>
                   </div>
 
                   <div className="mt-4">
