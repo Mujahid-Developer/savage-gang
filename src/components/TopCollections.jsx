@@ -1,7 +1,6 @@
 import { useContext } from "react";
 import UserContext from "../context/UserContext";
 import NftCard from "./shared/NftCard";
-import { Tab } from "@headlessui/react";
 
 const TopCollections = () => {
   const { users } = useContext(UserContext);
@@ -13,9 +12,15 @@ const TopCollections = () => {
           className="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-violet-700 via-violet-500 to-violet-700 text-center"
           style={{ fontFamily: "Aldrich" }}
         >
-          Top Collections
+          Savage Gallary
         </h1>
-        <Tab.Group>
+        <div className="grid grid-flow-row md:grid-cols-4 grid-cols-2 gap-4 my-20">
+          {users.map((user) => (
+            <NftCard user={user} />
+          ))}
+        </div>
+
+        {/* <Tab.Group>
           <div className="flex justify-center items-center my-8 w-full ">
             <Tab.List className={"flex gap-5"}>
               <Tab>
@@ -94,7 +99,7 @@ const TopCollections = () => {
               ))}
             </Tab.Panel>
           </Tab.Panels>
-        </Tab.Group>
+        </Tab.Group> */}
       </div>
     </>
   );

@@ -32,7 +32,7 @@ const Faq = () => {
       >
         Sincerely Asked Questions
       </h1>
-      <div className="flex flex-col md:flex-row justify-between items-center gap-2">
+      <div className="flex flex-col md:flex-row justify-between items-center gap-2 text-white">
         <div className="md:w-3/4 w-full">
           {FAQ_TEXT.map((details) => (
             <div className="mb-4">

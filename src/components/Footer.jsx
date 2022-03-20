@@ -1,6 +1,6 @@
 import { FaFacebookF, FaInstagram, FaTwitter } from "react-icons/fa";
 import { GiSailboat } from "react-icons/gi";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import Logo from "../assets/logo.svg";
 
 const Footer = () => {
@@ -17,13 +17,13 @@ const Footer = () => {
                 They are the true savage, they don't need the sunglasses.
               </p>
             </div>
-            <div>
+            {/* <div>
               <ul className="flex gap-4 md:flex-col md:gap-0">
                 <Link to="/store">Store</Link>
                 <Link to="/about">About</Link>
                 <Link to="/roadmap">Roadmap</Link>
               </ul>
-            </div>
+            </div> */}
             <div className="flex flex-col md:items-end gap-3">
               <button className="btn bg-gradient-to-r from-violet-600 to-violet-500 border-none text-white">
                 View Drops

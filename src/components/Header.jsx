@@ -57,13 +57,7 @@ const Header = () => {
             className="text-xl lg:text-5xl text-transparent bg-clip-text bg-gradient-to-r from-purple-700 via-purple-500 to-purple-700 font-bold"
             style={{ fontFamily: "Aldrich" }}
           >
-            Discover, collect and
-            <br />
-            sell extraordinary <br /> NFTs
-          </h1>
-          <h1 className="text-white text-xs">
-            on Bangladesh’s first & <br />
-            biggest NFT platfrom
+            Own the story of the Savage thay resonates with you
           </h1>
         </div>
         <div className="relative min-h-96">

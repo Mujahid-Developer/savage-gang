@@ -37,13 +37,14 @@ const About = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-8">
         <h1
           style={{ fontFamily: "Aldrich" }}
-          className=" text-3xl text-transparent bg-clip-text bg-gradient-to-r from-purple-700 via-purple-500 to-purple-700 text-center"
+          className="text-5xl text-transparent bg-clip-text bg-gradient-to-r from-purple-700 via-purple-500 to-purple-700 font-bold text-center my-7"
         >
           Meet The Minds <br /> Behind Savage Gang!
         </h1>
         <p style={{ fontFamily: "Aldrich" }} className=" text-center">
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem <br /> Ipsum has been the industry's standard dummy{" "}
+          We are not the Savage, but we tried to create some and you can own one
+          <br />
+          ...or more.
         </p>
         <img className="mx-auto" src={Savage_logo} alt="" />
       </div>

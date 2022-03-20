@@ -30,16 +30,16 @@ const TopTokens = () => {
   return (
     <>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 my-16 min-h-96">
-        <h1
+        {/* <h1
           className=" text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-violet-700 via-violet-500 to-violet-700 text-center"
           style={{ fontFamily: "Aldrich" }}
         >
           Top Tokens
-        </h1>
+        </h1> */}
 
         <div className="grid md:grid-cols-2 grid-cols-1 mt-10 gap-4 items-center">
           <div className=" flex flex-col gap-5 md:items-start items-center md:text-left text-center">
-            <h1 className="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-700 via-purple-500 to-purple-700">
+            <h1 className="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-violet-700 via-violet-500 to-violet-700">
               Savage Homosapiens
             </h1>
             <p className="text=3xl text-white">
