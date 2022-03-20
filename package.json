@@ -1,5 +1,6 @@
 {
   "name": "savage-gang",
+  "homepage": ".",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
