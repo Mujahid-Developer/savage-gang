@@ -22,6 +22,16 @@ const Faq = () => {
       title: "When minting?",
       description: "Presale: 20th March. Public sale: 25th March.",
     },
+    {
+      title: "Why should I mint?",
+      description:
+        "Every savage homo has a story. Own the story that resonates with you.",
+    },
+    {
+      title: "How do I mint?",
+      description:
+        "Connect your metamask wallet to our website when the minting is going on. After our sale is over, you can always mint from Opensea.",
+    },
   ];
 
   return (

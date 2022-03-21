@@ -11,14 +11,14 @@ const Navbar = () => {
   }
   return (
     <>
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 ">
-        <img
-          className=" md:w-80 w-56 absolute -z-10 top-0 right-0"
-          src={RightSVG}
-          alt=""
-          srcset=""
-        />
-        <div className="flex items-center justify-between h-16 bg-gradient-to-r from-violet-900/20 via-violet-900/30 to-violet-900/10 backdrop-blur-md p-4 rounded-b-lg">
+      <img
+        className=" md:w-80 w-56 absolute -z-10 top-0 right-0"
+        src={RightSVG}
+        alt=""
+        srcset=""
+      />
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-violet-900/20 via-violet-900/30 to-violet-900/10 backdrop-blur-md  rounded-b-lg">
+        <div className="flex items-center justify-between h-16 p-4">
           <div className="flex items-center">
             <div className="flex-shrink-0">
               <Link to="/">
@@ -26,7 +26,7 @@ const Navbar = () => {
               </Link>
             </div>
           </div>
-          <div className="hidden md:block">
+          <div className="block">
             <div className="ml-10 flex items-baseline space-x-4">
               {navigation.map((item) => (
                 <Link
