@@ -7,13 +7,16 @@ const TopCollections = () => {
 
   return (
     <>
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 my-16 min-h-screen">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 my-14 min-h-screen">
         <h1
           className="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-violet-700 via-violet-500 to-violet-700 text-center"
           style={{ fontFamily: "Aldrich" }}
         >
           Savage Gallary
         </h1>
+        <p className="text-center text-white mt-4">
+          Only 27 supplies, each with a story that you own.
+        </p>
         <div className="grid grid-flow-row md:grid-cols-4 grid-cols-2 gap-4 my-20">
           {users.map((user) => (
             <NftCard user={user} />

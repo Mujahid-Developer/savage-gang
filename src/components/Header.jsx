@@ -54,10 +54,10 @@ const Header = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 min-h-96">
         <div className="flex justify-between items-center my-10">
           <h1
-            className="text-xl lg:text-5xl text-transparent bg-clip-text bg-gradient-to-r from-purple-700 via-purple-500 to-purple-700 font-bold"
+            className="text-xl lg:text-4xl text-transparent bg-clip-text bg-gradient-to-r from-purple-700 via-purple-500 to-purple-700 font-bold"
             style={{ fontFamily: "Aldrich" }}
           >
-            Own the story of the Savage thay resonates with you
+            Own the story of the Savage <br /> thay resonates with you
           </h1>
         </div>
         <div className="relative min-h-96">
