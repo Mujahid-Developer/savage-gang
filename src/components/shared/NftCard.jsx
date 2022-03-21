@@ -1,5 +1,6 @@
 import { Dialog, Transition } from "@headlessui/react";
 import React, { useState, Fragment } from "react";
+import { FaArrowRight } from "react-icons/fa";
 import Eth_logo from "../../assets/eth_logo.svg";
 
 // const ReadMore = ({ children }) => {
@@ -44,6 +45,7 @@ const NftCard = ({ user }) => {
                 onClick={openModal}
               >
                 Story
+                <FaArrowRight className="ml-1" />
               </button>
               <img className="w-3" src={Eth_logo} alt="" />
             </div>
