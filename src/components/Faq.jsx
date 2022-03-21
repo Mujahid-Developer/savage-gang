@@ -35,9 +35,9 @@ const Faq = () => {
   ];
 
   return (
-    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 my-16">
+    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 my-24">
       <h1
-        className=" text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-violet-700 via-violet-500 to-violet-700 text-center mb-8"
+        className=" text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-violet-700 via-violet-500 to-violet-700 text-center mb-20"
         style={{ fontFamily: "Aldrich" }}
       >
         Sincerely Asked Questions
