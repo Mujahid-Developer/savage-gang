@@ -57,17 +57,17 @@ const Header = () => {
             className="text-xl lg:text-4xl text-transparent bg-clip-text bg-gradient-to-r from-purple-700 via-purple-500 to-purple-700 font-bold"
             style={{ fontFamily: "Aldrich" }}
           >
-            Own the story of the Savage <br /> thay resonates with you
+            Own the story of the Savage <br /> that resonates with you
           </h1>
         </div>
         <div className="relative min-h-96">
           <div>
             <div className="bg-gradient-to-r from-violet-900/80 via-violet-900/80 to-violet-900/80 backdrop-blur-xs absolute w-2/4 h-full flex flex-col justify-center items-end text-white rounded-r-xl">
-              <div className=" w-full md:px-8 px-3 flex flex-col justify-center gap-2 md:gap-6 h-full">
-                <h1 className="font-bold md:text-3xl text-sm">
+              <div className=" w-full md:px-8 px-3 flex flex-col justify-center gap-2 lg:gap-20 h-full">
+                <h1 className="font-bold md:text-5xl text-sm">
                   Savage Homosapiens
                 </h1>
-                <h1 className="text-xs md:text-lg font-thin">
+                <h1 className="text-xs md:text-3xl lg:leading-8 font-thin">
                   Welcome to the home of Savage Gang on OpenSea. Discover the
                   best items in this collection.
                 </h1>

@@ -43,8 +43,15 @@ const TopTokens = () => {
               Savage Homosapiens
             </h1>
             <p className="text=3xl text-white">
-              Welcome to the home of Savage Gang on OpenSea. <br />
-              Discover the best items in this collection.
+              Every savage character has a chronic health issue (like social
+              phobia, anxiety issues, and mostly depression), so everyone was
+              admitted to a Rehab at some point in their life. Most times the
+              best place in life is the place you never wanted to go. They all
+              never knew each other but in the Rehab centre, they slowly became
+              friends. They formed a gang called: the Savage Gang They are
+              challenging the worries life gave them and fighting the battle of
+              life (health and mental issues) together, while at the same time,
+              making others smile.
             </p>
             <Link to="/store">
               <button className="btn w-76 bg-gradient-to-r from-violet-500 to-violet-400 border-0 text-white">

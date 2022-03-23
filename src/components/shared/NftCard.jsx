@@ -1,6 +1,5 @@
 import { Dialog, Transition } from "@headlessui/react";
 import React, { useState, Fragment } from "react";
-import { FaArrowRight } from "react-icons/fa";
 import Eth_logo from "../../assets/eth_logo.svg";
 
 // const ReadMore = ({ children }) => {
@@ -20,7 +19,7 @@ import Eth_logo from "../../assets/eth_logo.svg";
 // };
 
 const NftCard = ({ user }) => {
-  const { img, nft_name, details, url } = user;
+  const { img, nft_name, details, url, price } = user;
   const [showModal, setShowModal] = useState(false);
 
   function closeModal() {
@@ -39,19 +38,20 @@ const NftCard = ({ user }) => {
             <img className="w-full p-1" src={img} alt="Album" />
           </figure>
           <div className="p-1 mt-2">
-            <div className="flex justify-between items-center">
+            <div className="flex flex-col justify-between py-2 gap-3">
+              <div className="flex justify-between items-center">
+                <h1 className="w-3/5 font-semibold text-sm">{nft_name}</h1>
+
+                <h1 className="font-medium md:text-sm text-xs flex gap-2">
+                  {price} ETH <img className="w-3" src={Eth_logo} alt="" />
+                </h1>
+              </div>
               <button
-                className="btn btn-xs font-bold bg-white rounded-full text-violet-900 hover:text-white hover:bg-violet-700 border-none px-2"
+                className="btn font-bold bg-violet-300  rounded text-black hover:text-white hover:bg-violet-700 border-none"
                 onClick={openModal}
               >
                 Story
-                <FaArrowRight className="ml-1" />
               </button>
-              <img className="w-3" src={Eth_logo} alt="" />
-            </div>
-            <div className="flex justify-between py-2">
-              <h1 className="w-3/5 font-semibold text-sm">{nft_name}</h1>
-              <h1 className="font-medium md:text-sm text-xs">0.044 ETH</h1>
             </div>
           </div>
         </div>

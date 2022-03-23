@@ -42,11 +42,10 @@ const Footer = () => {
             </div>
           </div>
           <hr className="my-4" />
-          <div className="flex justify-between font-thin text-xs text-white pb-2">
+          <div className="flex justify-center font-thin text-xs text-white pb-2">
             <h1>
               {new Date().getFullYear()} Savage Gang! NFT. All Right Researved
             </h1>
-            <h1>Let’s make a new future</h1>
           </div>
         </div>
       </div>

@@ -12,15 +12,16 @@ const Faq = () => {
     },
     {
       title: "Which blockchain?",
-      description: "Ethereum Blockchain (ERC721)",
+      description: "Only on OpenSea for now.",
     },
     {
       title: "What's the mint price?",
-      description: "Savage decided it to be 0.0666 ETH.",
+      description: "Savage decided it to be 0.044 ETH.",
     },
     {
       title: "When minting?",
-      description: "Presale: 20th March. Public sale: 25th March.",
+      description:
+        "You can mint anytime, for the next 5 days, starting from today (23 March 2022)",
     },
     {
       title: "Why should I mint?",
@@ -30,7 +31,7 @@ const Faq = () => {
     {
       title: "How do I mint?",
       description:
-        "Connect your metamask wallet to our website when the minting is going on. After our sale is over, you can always mint from Opensea.",
+        "Click on GET NOW and you'll be taken to OpenSea, where you can easily mint. We recommend you mint when the gas price is lower, so that your money doesn't go waste.",
     },
   ];
 

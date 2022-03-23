@@ -15,7 +15,7 @@ const Roadmap = () => {
       lg:px-8"
       >
         <h1
-          className=" text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-700 via-purple-500 to-purple-700 text-center mt-16"
+          className="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-violet-700 via-violet-500 to-violet-700 text-center mt-16"
           style={{ fontFamily: "Aldrich" }}
         >
           Our Roadmap
