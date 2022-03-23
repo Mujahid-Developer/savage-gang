@@ -32,33 +32,38 @@ const NftCard = ({ user }) => {
 
   return (
     <>
-      <div className="card  bg-gradient-to-r from-violet-700/80 via-violet-600/80 to-violet-700/80 backdrop-blur-xs text-white shadow-xl m-1 p-2 flex flex-col justify-between cursor-pointer">
+      <div className="card  bg-gradient-to-r from-violet-700/80 via-violet-600/80 to-violet-700/80 backdrop-blur-xs text-white shadow-xl p-2 flex flex-col justify-between cursor-pointer">
         <div>
           <figure>
             <img className="w-full p-1" src={img} alt="Album" />
           </figure>
           <div className="p-1 mt-2">
             <div className="flex flex-col justify-between py-2 gap-3">
-              <div className="flex justify-between items-center">
-                <h1 className="w-2/5 font-semibold text-sm">{nft_name}</h1>
-                <h1 className="font-medium md:text-sm text-xs flex items-center justify-start gap-1">
-                  {price} ETH <FaEthereum />
+              <div className="flex justify-between items-center gap-2">
+                <h1 className="w-2/5 md:w-3/5 font-semibold text-sm">
+                  {nft_name}
+                </h1>
+                <h1 className="font-medium md:text-sm text-xs inline-flex gap-1 items-center text-right">
+                  {price} ETH
+                  <FaEthereum />
                 </h1>
               </div>
-              <button
-                className="btn font-bold bg-violet-200  rounded text-black hover:text-white hover:bg-violet-700 border-none"
-                onClick={openModal}
-              >
-                Story
-              </button>
             </div>
           </div>
         </div>
-        <a href={url}>
-          <button className="btn w-full bg-gradient-to-r from-violet-600 to-violet-500 border-none text-white">
-            Get Now
+        <div>
+          <button
+            className="btn font-bold w-full mb-2 bg-violet-900  rounded text-white hover:text-white hover:bg-violet-700 border-none"
+            onClick={openModal}
+          >
+            Story
           </button>
-        </a>
+          <a href={url}>
+            <button className="btn w-full bg-gradient-to-r from-violet-600 to-violet-500 border-none text-white">
+              Get Now
+            </button>
+          </a>
+        </div>
       </div>
 
       <>
