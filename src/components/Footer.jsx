@@ -1,4 +1,4 @@
-import { FaFacebookF, FaInstagram, FaTwitter } from "react-icons/fa";
+import { FaDiscord, FaInstagram, FaTwitter } from "react-icons/fa";
 import { GiSailboat } from "react-icons/gi";
 // import { Link } from "react-router-dom";
 import Logo from "../assets/logo.svg";
@@ -25,16 +25,26 @@ const Footer = () => {
               </ul>
             </div> */}
             <div className="flex flex-col md:items-end gap-3">
-              <button className="btn bg-gradient-to-r from-violet-600 to-violet-500 border-none text-white">
-                View Drops
-              </button>
-              <button className="btn bg-gradient-to-r from-violet-600 to-violet-500 border-none text-white">
-                Contact Us
-              </button>
+              <a href="https://opensea.io/collection/savage-gang">
+                <button className="btn bg-gradient-to-r from-violet-600 to-violet-500 border-none text-white">
+                  View OpenSea
+                </button>
+              </a>
+              <a href="mailto:savageganghomo@email.com">
+                <button className="btn bg-gradient-to-r from-violet-600 to-violet-500 border-none text-white">
+                  Contact Us
+                </button>
+              </a>
               <div className="flex justify-between gap-3 ">
-                <FaFacebookF className="btn btn-circle bg-gradient-to-r from-violet-600 to-violet-500 border-none text-white p-3" />
-                <FaInstagram className="btn btn-circle bg-gradient-to-r from-violet-600 to-violet-500 border-none text-white p-3" />
-                <FaTwitter className="btn btn-circle bg-gradient-to-r from-violet-600 to-violet-500 border-none text-white p-3" />
+                <a href="https://discord.gg/zWgExnBFEP">
+                  <FaDiscord className="btn btn-circle bg-gradient-to-r from-violet-600 to-violet-500 border-none text-white p-3" />
+                </a>
+                <a href="https://www.instagram.com/savageganghomo">
+                  <FaInstagram className="btn btn-circle bg-gradient-to-r from-violet-600 to-violet-500 border-none text-white p-3" />
+                </a>
+                <a href="https://twitter.com/savageganghomo?t=HzIJJ652DYxphyCHJgrp2A&s=09">
+                  <FaTwitter className="btn btn-circle bg-gradient-to-r from-violet-600 to-violet-500 border-none text-white p-3" />
+                </a>
                 <a href="https://opensea.io/collection/savage-gang">
                   <GiSailboat className="btn btn-circle bg-gradient-to-r from-violet-600 to-violet-500 border-none text-white p-3" />
                 </a>
