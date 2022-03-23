@@ -32,7 +32,7 @@ const NftCard = ({ user }) => {
 
   return (
     <>
-      <div className="card  bg-gradient-to-r from-violet-700/80 via-violet-600/80 to-violet-700/80 backdrop-blur-xs text-white shadow-xl p-2 flex flex-col justify-between cursor-pointer">
+      <div className="card  bg-gradient-to-r from-violet-700/80 via-violet-600/80 to-violet-700/80 backdrop-blur-xs text-white shadow-xl p-2 ml-1 flex flex-col justify-between cursor-pointer">
         <div>
           <figure>
             <img className="w-full p-1" src={img} alt="Album" />
