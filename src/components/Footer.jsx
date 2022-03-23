@@ -49,6 +49,9 @@ const Footer = () => {
                   <GiSailboat className="btn btn-circle bg-gradient-to-r from-violet-600 to-violet-500 border-none text-white p-3" />
                 </a>
               </div>
+              <h1 className="text-xs text-red-400">
+                We are still not so active on Discord, but you may join.
+              </h1>
             </div>
           </div>
           <hr className="my-4" />
