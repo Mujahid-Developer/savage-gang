@@ -26,16 +26,16 @@ const Footer = () => {
             </div> */}
             <div className="flex flex-col md:items-end gap-3">
               <a href="https://opensea.io/collection/savage-gang">
-                <button className="btn bg-gradient-to-r from-violet-600 to-violet-500 border-none text-white">
+                <button className="w-full btn bg-gradient-to-r from-violet-600 to-violet-500 border-none text-white">
                   View OpenSea
                 </button>
               </a>
               <a href="mailto:savageganghomo@email.com">
-                <button className="btn bg-gradient-to-r from-violet-600 to-violet-500 border-none text-white">
+                <button className="w-full btn bg-gradient-to-r from-violet-600 to-violet-500 border-none text-white">
                   Contact Us
                 </button>
               </a>
-              <div className="flex justify-between gap-3 ">
+              <div className="flex justify-center md:justify-between gap-3 ">
                 <a href="https://discord.gg/zWgExnBFEP">
                   <FaDiscord className="btn btn-circle bg-gradient-to-r from-violet-600 to-violet-500 border-none text-white p-3" />
                 </a>
