@@ -1,6 +1,6 @@
 import { Dialog, Transition } from "@headlessui/react";
 import React, { useState, Fragment } from "react";
-import Eth_logo from "../../assets/eth_logo.svg";
+import { FaEthereum } from "react-icons/fa";
 
 // const ReadMore = ({ children }) => {
 //   const text = children;
@@ -40,10 +40,9 @@ const NftCard = ({ user }) => {
           <div className="p-1 mt-2">
             <div className="flex flex-col justify-between py-2 gap-3">
               <div className="flex justify-between items-center">
-                <h1 className="w-3/5 font-semibold text-sm">{nft_name}</h1>
-
-                <h1 className="font-medium md:text-sm text-xs flex gap-2">
-                  {price} ETH <img className="w-3" src={Eth_logo} alt="" />
+                <h1 className="w-2/5 font-semibold text-sm">{nft_name}</h1>
+                <h1 className="font-medium md:text-sm text-xs flex items-center justify-start gap-1">
+                  {price} ETH <FaEthereum />
                 </h1>
               </div>
               <button

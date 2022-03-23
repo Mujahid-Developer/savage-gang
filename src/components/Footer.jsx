@@ -57,7 +57,7 @@ const Footer = () => {
           <hr className="my-4" />
           <div className="flex justify-center font-thin text-xs text-white pb-2">
             <h1>
-              {new Date().getFullYear()} Savage Gang! NFT. All Right Researved
+              {new Date().getFullYear()} Savage Gang NFT! All Rights Reserved.
             </h1>
           </div>
         </div>
