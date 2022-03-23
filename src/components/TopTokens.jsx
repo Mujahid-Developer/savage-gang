@@ -48,7 +48,7 @@ const TopTokens = () => {
               admitted to a Rehab at some point in their life. Most times the
               best place in life is the place you never wanted to go. They all
               never knew each other but in the Rehab centre, they slowly became
-              friends. They formed a gang called: the Savage Gang They are
+              friends. They formed a gang called: The Savage Gang. They are
               challenging the worries life gave them and fighting the battle of
               life (health and mental issues) together, while at the same time,
               making others smile.

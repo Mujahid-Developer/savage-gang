@@ -35,7 +35,7 @@ const Roadmap = () => {
                     <div>
                       <h1 className="font-bold text-xl mb-5">{title}</h1>
                       <h1
-                        className="font-thin text-sm md:text-md text-justify"
+                        className="font-thin text-sm md:text-md"
                         dangerouslySetInnerHTML={{ __html: description }}
                       ></h1>
                     </div>
