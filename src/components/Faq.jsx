@@ -16,7 +16,7 @@ const Faq = () => {
     },
     {
       title: "What's the mint price?",
-      description: "Savage decided it to be 0.044 ETH.",
+      description: "Savage decided it to be 0.02 ETH.",
     },
     {
       title: "When minting?",
